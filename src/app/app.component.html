@@ -1,6 +1,26 @@
-<h1>{{'💕' + frase + '💕' | titlecase}}</h1>
+<br>
+<br>
 
-
-<button (click)="mostrarNombre()">
-  Cambiar Nombre
+<button
+(click)="mostrarNombre()"
+pButton
+label="Cambiar nombre"
+icon="pi pi-check"
+iconPos="left"
+class="p-button-warning text-layout"
+>
 </button>
+
+<br>
+<br>
+
+<p-card [style]="{'width': '25rem', 'margin-bottom': '2em'}">
+  <ng-template pTemplate="header">
+    {{'💕' + frase + '💕' | titlecase}}
+  </ng-template>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt blanditiis illum culpa suscipit earum eligendi
+  voluptate voluptatem hic cumque.
+  <ng-template pTemplate="footer">
+    Footer content here
+  </ng-template>
+</p-card>
